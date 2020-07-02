@@ -1,0 +1,71 @@
+.link{
+  color: #FF6078;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom:1px #FF6078 dashed;
+}
+.btn{
+  padding: 23px 25px 23px 55px;
+  background-color: #fff;
+  border: none;
+  border-radius: 30px;
+  position: relative;
+  box-shadow: 3px 5px 5px 1px rgba(172, 172, 172, 0.36);
+  transition: all 0.3s;
+
+  &:before {
+    position: absolute;
+    content: url("../../img/calendar.svg");
+    width: 30px;
+    height: 30px;
+    display: block;
+    top: 50%;
+    transform: translate(50% ,-40%);
+    left: 0;
+  }
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+.primary-btn{
+  background-color: #F6ABAD;
+  padding: 25px 150px 25px 25px;
+  border-radius: 30px;
+  border-color:transparent;
+  position: relative;
+  box-shadow: 0 10px 15px 1px rgba(255, 96, 120, 0.37);
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: all .3s;
+  &:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 101%;
+    height: 50%;
+    left: 50%;
+    bottom: 0;
+    background-color: transparent;
+    border: 5px solid rgba(184, 89, 106, 0.19);
+    border-top: transparent;
+    border-left: transparent;
+    transform: translate(-50%,20%);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  &:after{
+    position: absolute;
+    content: url("../../img/_@1X.png");
+    top: 0;
+    transform: translateX(10%);
+  }
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+.form-submit{
+  &:after{
+    content: url("../../img/flower.webp");
+  }
+}

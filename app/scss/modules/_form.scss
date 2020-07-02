@@ -1,0 +1,126 @@
+.popup{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  z-index: 15;
+  overflow-y: scroll ;
+  border-radius: 30px;
+  height: 100%;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.popup-form {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(38deg, rgba(255, 255, 255, 1) 0%, rgba(253, 244, 240, 1) 100%);
+  max-width: 40vw;
+  padding: 56px 50px 500px;
+  position: relative;
+}
+.form-bg-img{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.form-body {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+
+  label {
+    display: none;
+  }
+
+  input, select {
+    padding: 32px 47px;
+    outline: none;
+    border-radius: 30px;
+    border: none;
+    margin: 10px 0;
+    background-color: #ffffff;
+  }
+  .form-select {
+    appearance: none;
+    width: 100%;
+  }
+}
+.form-select-wrapper{
+  position: relative;
+  &:after {
+    content: url("../../img/arr-d.webp");
+    position: absolute;
+    display: block;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.popup-form-title{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  span{
+    font-weight: 500;
+  }
+}
+.popup-form-description{
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1.1px;
+}
+
+
+.popup-form-close, .form-thanks-close {
+  position: absolute;
+  font-size: 20px;
+  right: 20px;
+  top: 20px;
+  color: #282828;
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+.form-thanks{
+  padding: 80px 120px;
+  max-width: 30vw;
+  position: relative;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(38deg, rgba(255, 255, 255, 1) 0%, rgba(253, 244, 240, 1) 100%);
+  border-radius: 30px;
+  overflow: hidden;
+  &:after{
+    content: url("../../img/thanks-bg.webp");
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+.form-thanks-text{
+  span{
+    font-weight: 700;
+  }
+  line-height: 1.4;
+  text-align: center;
+}
+.form-thanks-check-img{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.form-thanks-wrapper{
+  z-index: 16;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+}

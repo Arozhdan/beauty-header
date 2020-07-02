@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<header class="header">
+	<div class="container">
+		<div class="header-mask">
+			<div class="rellax heart" data-rellax-speed="7">
+				<img src="img/heart1.png" alt="#">
+			</div>
+			<div class="rellax heart2" data-rellax-speed="3">
+				<img src="img/heart1.png" alt="#">
+			</div>
+			<div class="header-top">
+				<div class="header-top-left">
+					<div class="header-top-left-logo">
+						<img src="img/logo.png" alt="logo" class="logo">
+					</div>
+					<p class="header-top-left-intro"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+				</div>
+				<div class="header-top-address">
+					<div class="header-top-address-img"><img src="img/map.webp" alt="map"></div>
+					<div class="header-top-address-details-wrapper">
+						<p class="header-top-address-details">Lorem ipsum dolor sit: <br> <span>Kamycka 1281, Praha</span></p>
+						<a href="#" class="link header-top-address-link">Смотреть на карте</a>
+					</div>
+				</div>
+				<div class="header-top-contacts">
+					<div class="header-top-contacts-left">
+						<p class="header-top-contacts-left-phone">
+							<span>Lorem ipsum dolor.</span><br>
+							+420 777 53 1718
+						</p>
+						<p class="header-top-contacts-hours">Mon-Sun <span>9:00-21:00</span></p>
+					</div>
+					<button class="btn header-top-contacts-btn">Записаться онлайн</button>
+				</div>
+			</div>
+			<nav class="header-nav">
+				<div class="container">
+					<div class="header-nav-inner">
+						<a href="#" class="header-nav-link header-nav-link__active">Главная</a>
+						<a href="#" class="header-nav-link">Шугаринг и депиляция воском</a>
+						<a href="#" class="header-nav-link">Антицеллюлитный массаж</a>
+						<a href="#" class="header-nav-link">Клссический массаж</a>
+						<a href="#" class="header-nav-link">Обучение</a>
+						<a href="#" class="header-nav-link">Косметика для мастеров</a>
+						<a href="#" class="header-nav-link">О студии</a>
+						<a href="#" class="header-nav-link">Контакты</a>
+					</div>
+				</div>
+			</nav>
+			<div class="header-content">
+				<div class="container">
+					<div class="header-content-inner">
+						<div class="header-content-inner-left">
+							<h1 class="header-content-title"><span>Lorem ipsum </span>dolor sit amet?<span>  consectetur elit.</span>
+								Impeditad ipisicing.</h1>
+							<ul class="header-content-list">
+								<li class="header-content-list-item"><span></span> Шугаринг и депиляция воском</li>
+								<li class="header-content-list-item"><span></span>Клссический массаж</li>
+								<li class="header-content-list-item"><span></span>Косметика для мастеров</li>
+								<li class="header-content-list-item"><span></span>Антицеллюлитный массаж</li>
+							</ul>
+							<button class="primary-btn header-content-btn">Lorem ipsum dolor sit amet.</button>
+						</div>
+						<div class="header-content-inner-right">
+							<div class="header-content-inner-right-card">
+								<img src="img/card.png" alt="card">
+								<img id="toggle-info" class="info" src="img/info.svg" alt="info">
+							</div>
+							<p class="header-content-inner-right-panel" style="display:none;">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae eaque illo incidunt iusto possimus
+								quod.
+
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="map" style="display: none">
+		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7bb227f817610499f2846ef43767df99e4d7ff7d004d659710bc4a6fefc2ff1f&amp;source=constructor"
+		        width="320" height="240" frameborder="0"></iframe>
+	</div>
+</header>
+<section class="section"></section>
+
+	<div class="popup" style="display: none">
+
+		<form class="popup-form">
+			<div class="form-bg-img">
+				<img src="img/form-book.webp" alt="">
+			</div>
+			<button class="popup-form-close">x</button>
+			<h2 class="popup-form-title">Lorem <span>ipsum dolor.</span></h2>
+			<p class="popup-form-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fugiat iste
+				laborum
+				nam nobis quam sequi! Ab alias, amet, culpa cumque facilis illum libero numquam quibusdam quo, repudiandae
+				sapiente sit!</p>
+
+			<div class="form-body">
+				<div class="form-select-wrapper">
+					<select name="subject" id="form-subject" class="form-select">
+						<option value="1" selected>Lorem ipsum dolor.</option>
+						<option value="2">2Lorem ipsum dolor.2</option>
+						<option value="3">3Lorem ipsum dolor.3</option>
+						<option value="4">4Lorem ipsum dolor.4</option>
+					</select>
+				</div>
+
+				<label for="form-name"> Введите ваше имя </label>
+				<input name="form-name" placeholder="Ваше имя" id="form-name" type="text">
+				<label for="form-number"> Введите ваш номер телефона</label>
+				<input name="form-number" placeholder="Ваш номер телефона" id="form-number" type="text">
+				<button class="primary-btn form-submit">Получить программу</button>
+			</div>
+		</form>
+	</div>
+	<div class="form-thanks-wrapper" style="display:none;">
+		<div class="form-thanks">
+			<button class="form-thanks-close">x</button>
+
+			<div class="form-thanks-check-img">
+				<img src="img/check.webp" alt="ok">
+			</div>
+			<p class="form-thanks-text"><span>Lorem ipsum dolor. <br></span>Sit amet, consectetur.</p>
+		</div>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/rellax.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

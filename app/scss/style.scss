@@ -1,0 +1,38 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+
+
+html{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+}
+.container{
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+}
+*, *:after, *:before{
+  box-sizing: border-box;
+}
+button{
+  outline: none;
+}
+
+
+.section{
+  height: 1000px;
+}
+
+@import "modules/header";
+@import "modules/header-top";
+@import "modules/global";
+@import "modules/header-nav";
+@import "modules/map";
+@import "modules/form";
+
+
+@import "media";
