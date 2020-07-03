@@ -51,7 +51,7 @@
 .form-select-wrapper{
   position: relative;
   &:after {
-    content: url("../../img/arr-d.webp");
+    content: url("../img/arr-d.webp");
     position: absolute;
     display: block;
     right: 5%;
@@ -97,7 +97,7 @@
   border-radius: 30px;
   overflow: hidden;
   &:after{
-    content: url("../../img/thanks-bg.webp");
+    content: url("../img/thanks-bg.webp");
     position: absolute;
     right: 0;
     bottom: 0;
