@@ -21,7 +21,6 @@ $(function () {
     })
     $('.header-top-contacts-btn').on('click', () => {
         showForm()
-
     })
     $('.header-content-btn').on('click', () => {
         showForm()
@@ -34,6 +33,13 @@ $(function () {
             $('.form-thanks-wrapper').hide()
         })
     })
+    $('.mobile-menu-btn').on('click', ()=>{
+        $('.mobile-menu').show(500)
+        $('.mobile-menu-close').on('click', ()=>{
+            $('.mobile-menu').hide(500)
+        })
+    })
+
 });
 
 function toggleMap() {
@@ -46,7 +52,6 @@ function toggleMap() {
             $('.map').hide()
         }
     })
-
 }
 
 function showForm() {
